@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Lato&family=Montserrat&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+/* headers */
+header {
+  background-color: #091540;
+  text-align: center;
+  font-size: 30px;
+  color: #D8D8F6;
+  padding: 10px;
+  line-height: 10px;
+}
+
+.header-section {
+  font-family: 'Dancing Script', cursive;
+  text-align: center;
+}
+
+h2 {
+  font-family: 'Dancing Script', sans-serif;
+  font-size: 28px;
+  padding: 0 60px;
+}
+
+h3 {
+  font-family: 'Dancing Script';
+  text-align: center;
+}
+
+/* general styling */
+main {
+  background-color: #BF1A2F;
+}
+
+body {
+  margin: 0px;
+}
+
+section.background {
+  background-color: #f7d6e0;
+  padding: 20px 0;
+}
+
+img.rounded {
+  display: block;
+  border-radius: 10px;
+  border: 2px solid #D8D8F6;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+}
+
+img {
+  display: block;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+section {
+  padding: 50px 0;
+}
+
+section p,
+ol,
+ul {
+  margin: 50px;
+  font-size: 12px;
+}
+
+
+/* footer */
+
+footer {
+  background-color: #978897;
+  padding: 8px;
+}
+
+/* links */
+a:link {
+  color: #B18FCF;
+}
+
+a:visited {
+  color: #091540;
+}
+
+a:hover {
+  color: #D8D8F6;
+}
+
+a:active {
+  color: #978897;
+}
+
+
+/* groups and items (mobile) */
+
+.group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 100px;
+}
+
+.item {
+  flex: 1;
+  margin: 10px;
+}
+
+.item-double {
+  flex: 2;
+  margin: 10px;
+}
+
+/* groups and items (desktop) */
+@media all and (min-width:800px) {
+  .group {
+    flex-direction: row;
+    margin: -10px;
+  }
+
+  h2 {
+    font-size: 34px;
+  }
+
+  section p,
+  ol,
+  ul {
+    font-size: 15px;
+  }
+
+  img {
+    padding: 20px;
+  }
+}
