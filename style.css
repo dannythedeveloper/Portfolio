@@ -9,10 +9,10 @@
 header {
   background-color: #091540;
   text-align: center;
-  font-size: 30px;
+  font-size: 28px;
   color: #D8D8F6;
   padding: 10px;
-  line-height: 10px;
+  line-height: 52px;
 }
 
 .header-section {
@@ -20,15 +20,67 @@ header {
   text-align: center;
 }
 
-h2 {
+header h1 {
+  margin-bottom: 0;
+}
+
+header p {
+  font-size: 20px;
+  margin: 0;
+}
+
+header h3 {
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  margin: 0;
+}
+
+section h2 {
   font-family: 'Dancing Script', sans-serif;
   font-size: 28px;
-  padding: 0 60px;
+  padding: 0 70px;
+}
+
+section h2.padding {
+  padding: 0 70px 0 60px;
 }
 
 h3 {
   font-family: 'Dancing Script';
   text-align: center;
+  font-size: 22px;
+}
+
+
+/* navigation */
+header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0;
+}
+
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  margin: 0 0 5px 0;
+}
+
+header nav ul li {
+  list-style-type: none;
+  margin: 0;
+}
+
+header nav ul li a {
+  color: #D8D8F6;
+  text-decoration: none;
+  font-size: 15px;
+  padding: 0 20px 0 0;
+}
+
+header nav ul li:last-child a {
+  padding-right: 0;
 }
 
 /* general styling */
@@ -42,7 +94,7 @@ body {
 
 section.background {
   background-color: #f7d6e0;
-  padding: 20px 0;
+  padding: 10px 0 40px 0;
 }
 
 img.rounded {
@@ -52,6 +104,7 @@ img.rounded {
   margin-left: auto;
   margin-right: auto;
   padding: 0;
+  width: 75%;
 }
 
 img {
@@ -61,36 +114,80 @@ img {
   margin-right: auto;
 }
 
+img.rounded:hover {
+  opacity: 0.5;
+}
 
-section {
-  padding: 50px 0;
+main section {
+  justify-content: center;
+  padding-top: 20px;
+}
+
+section p {
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
 }
 
 section p,
-ol,
-ul {
-  margin: 50px;
+main ul {
+  margin: 0 50px 10px 50px;
   font-size: 12px;
+}
+
+main ol {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  justify-content: center;
+  padding: 0 100px;
+  line-height: 16px;
+  font-size: 12px;
+}
+
+main ol li {
+  padding-left: 100px;
 }
 
 
 /* footer */
 
 footer {
+  justify-content: center;
+  text-align: center;
   background-color: #978897;
   padding: 8px;
 }
 
+footer h3 {
+  margin: 5px 0;
+}
+
+main>a {
+  display: block;
+  color: #D8D8F6;
+  text-decoration: none;
+  font-size: 15px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
 /* links */
+
 a:link {
+  color: #f7d6e0;
+}
+
+main a:link {
   color: #B18FCF;
 }
 
-a:visited {
-  color: #091540;
+main a:visited {
+  color: #fff;
 }
 
-a:hover {
+main a:hover {
   color: #D8D8F6;
 }
 
@@ -98,13 +195,15 @@ a:active {
   color: #978897;
 }
 
+.bottom {
+  margin: 10px 0 20px 0;
+}
 
 /* groups and items (mobile) */
 
 .group {
   display: flex;
   flex-direction: column;
-  margin-bottom: 100px;
 }
 
 .item {
@@ -117,24 +216,96 @@ a:active {
   margin: 10px;
 }
 
+/* contact form design */
+form {
+  padding: 0 60px;
+}
+
+form label {
+  display: block;
+  font-size: 15px;
+  margin: 5px 0;
+  font-family: 'Lato', sans-serif;
+}
+
+form input,
+form textarea {
+  height: auto;
+  width: 100%;
+  color: #091540;
+}
+
+button {
+  margin: 10px 0;
+}
+
 /* groups and items (desktop) */
 @media all and (min-width:800px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+  }
+
+  header h1 {
+    font-size: 60px;
+    margin-top: 10px;
+  }
+
+  header div {
+    padding-left: 150px;
+  }
+
+  header nav ul {
+    margin: 0;
+    padding: 50px 100px 0 0;
+    font-size: ;
+  }
+
+  header nav ul li {
+    font-size: 20px;
+  }
+
+  header nav ul li a:hover {
+    color: #f7d6e0;
+    text-decoration: underline;
+  }
+
+  header h3 {
+    font-size
+  }
+
   .group {
+    flex-wrap: wrap;
     flex-direction: row;
-    margin: -10px;
   }
 
   h2 {
     font-size: 34px;
+    padding: 0 55px;
   }
 
   section p,
-  ol,
-  ul {
-    font-size: 15px;
+  section ol,
+  section ul {
+    font-size: 16px;
+  }
+
+  section {
+    padding: 20px 60px;
+    justify-content: center;
+  }
+
+  section.background {
+    padding: 20px 60px;
   }
 
   img {
     padding: 20px;
   }
+
+  main ol {
+    line-height: 20px;
+  }
+
 }
