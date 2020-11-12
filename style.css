@@ -175,7 +175,7 @@ footer h3 {
 
 main>a {
   display: block;
-  color: #D8D8F6;
+  color: #B18FCF;
   text-decoration: none;
   font-size: 15px;
   text-align: center;
@@ -184,16 +184,12 @@ main>a {
 
 /* links */
 
-a:link {
-  color: #f7d6e0;
-}
-
 main a:link {
   color: #B18FCF;
 }
 
 main a:visited {
-  color: #fff;
+  color: #091540;
 }
 
 main a:hover {
