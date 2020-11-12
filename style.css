@@ -45,10 +45,11 @@ section h2.padding {
   padding: 0 70px 0 60px;
 }
 
-h3 {
+main h3 a {
   font-family: 'Dancing Script';
   text-align: center;
   font-size: 22px;
+  margin-left: 160px;
 }
 
 
@@ -174,7 +175,7 @@ footer h3 {
   margin: 5px 0;
 }
 
-main>a {
+.centerlink {
   display: block;
   color: #B18FCF;
   text-decoration: none;
@@ -292,6 +293,10 @@ button {
     padding: 0 55px;
   }
 
+  main h3 {
+    margin-left: 40px;
+  }
+
   section p,
   section ol,
   section ul {
@@ -315,4 +320,7 @@ button {
     line-height: 20px;
   }
 
+  main>div>a {
+    margin-left: 604px;
+  }
 }
