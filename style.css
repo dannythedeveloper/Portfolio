@@ -116,6 +116,7 @@ img.rounded {
   padding: 0;
   width: 75%;
 }
+
 img {
   display: block;
   padding: 0;
@@ -270,7 +271,6 @@ button {
   header nav ul {
     margin: 0;
     padding: 50px 100px 0 0;
-    font-size: ;
   }
 
   header nav ul li {
@@ -280,10 +280,6 @@ button {
   header nav ul li a:hover {
     color: #f7d6e0;
     text-decoration: underline;
-  }
-
-  header h3 {
-    font-size
   }
 
   .group {
