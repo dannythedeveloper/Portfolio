@@ -283,6 +283,10 @@ button {
     text-decoration: underline;
   }
 
+  main>div>a:hover {
+    text-decoration: underline;
+  }
+
   .group {
     flex-wrap: wrap;
     flex-direction: row;
